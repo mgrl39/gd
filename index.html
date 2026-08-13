@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GD AUTOWRITE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>GD v1.0.0</h1>
+  <textarea input="text" id="defInput" class="showInput"></textarea><button id="copyBtn">COPIAR TEXTO</button>
+  <hr>
+  <footer>
+    <ul>
+      <button id="passo-admin" style="background-color:lightgoldenrodyellow">PASSO A ADMIN</button> -
+      <button id="lms" style="background-color:darkorange">LMS</button> -
+      <br>
+      <button id="tass-recurs" style="background-color:lightblue">TASS PER RECURS</button> -
+      <button id="confirmo-adresa" style="background-color:khaki">CONFIRMO ADREÇA</button>
+      <button id="buscar-fora" style="background-color:plum">SURTO PER BUSCAR PER FORA</button> -
+      <br>
+      <button id="incident-rel" style="background-color:gold">INCIDENT RELACIONAT %</button> -
+      <button id="informo-ac" style="background-color:skyblue">INFORMO AC</button> -
+      <button id="informo-prioritat" style="background-color:skyblue">INFORMO PRIORITAT</button> -
+      <button id="rebuig-aa" style="background-color:darkseagreen">REBUIG AA // VOL CONSULTAR</button> -
+    </ul>
+  </footer>
+
+  <br>
+  <hr>
+  <hr>
+  <div id="divTass">
+    <h3>TASS</h3>
+    SIMPTOMES: <textarea type="text" class="tassSimptomes" id="tassSimptomes"></textarea>
+    <div class="radio-group">
+      <label class="btn-radio-tass-sexe" id="tass-sexe-home-label">
+        <input type="radio" id="tass-sexe-home" name="tass-sexe" value="home" checked>
+        <span>HOME</span>
+      </label>
+      <label class="btn-radio-tass-sexe">
+        <input type="radio" id="tass-sexe-dona" name="tass-sexe" value="dona">
+        <span>DONA</span>
+      </label>
+    </div>
+    <div class="radio-group">
+      <label class="btn-radio-tass-sol">
+        <input type="radio" id="tass-sol-no" name="tass-sol" value="acompanyat" checked>
+        <span>ACOMPANYAT/DA</span>
+      </label>
+      <label class="btn-radio-tass-sol">
+        <input type="radio" id="tass-sol-si" name="tass-sol" value="sol">
+        <span>SOL/A</span>
+      </label>
+    </div>
+    <div class="radio-group">
+      <label class="btn-radio-tass-porta">
+        <input type="radio" id="tass-porta-si" name="tass-porta" value="obrenporta" checked>
+        <span>SI OBRIR PORTA</span>
+      </label>
+      <label class="btn-radio">
+        <input type="radio" id="tass-porta-no" name="tass-porta" value="noobrenporta">
+        <span>NO OBRIR PORTA</span>
+      </label>
+      <br>
+      <p>TELS: </p>
+       <input type="text" id="inputTassNumeros" class="tassNumeros">
+      <br>
+      <textarea type="text" id="tassInputResult" class="showInput"></textarea>
+    </div>
+  </div>
+  <button id="copyBtnTass">COPIAR TEXTO TASS</button>
+</body>
+<script type="module" src="dist/index.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+button:hover {
+  cursor: pointer;
+  background-color:lightgreen;
+}
+
+.tassSimptomes{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid lightskyblue;
+  border-radius: 4px;
+}
+
+.tassNumeros{
+  width: 50%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 2px;
+}
+.showInput {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+/*
+Source - https://stackoverflow.com/a/75354411
+Posted by ProgramistaZaDyche
+Retrieved 2026-08-13, License - CC BY-SA 4.0
+*/
+#stickyNotification #closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+#stickyNotification #closeBtn:hover{
+    color: white;
+    cursor: pointer;
+}
+body{
+height: 200vh;
+}
+
+input[type="radio"] {
+  /* ...existing styles */
+  place-content: center;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(2);
+}
+
+section:hover {
+  background-color:yellowgreen;
+}
